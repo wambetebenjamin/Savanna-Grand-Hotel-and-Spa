@@ -556,7 +556,7 @@ export default function SiteHome() {
             <h2>Good things<br />come to <em>the table.</em></h2>
             <p className="dining-name">Savanna Kitchen</p>
             <p className="dining-description">A generous taste of the Rift Valley, with garden-fresh produce, familiar favourites and a little something unexpected.</p>
-            <div className="dining-details"><span><Clock3 size={17} /> Daily, 7:00 am – 10:30 pm</span><span><UtensilsCrossed size={17} /> East African &amp; seasonal cuisine</span></div>
+            <div className="dining-details"><span><Clock3 size={17} /> Daily, 7:00 am to 10:30 pm</span><span><UtensilsCrossed size={17} /> East African &amp; seasonal cuisine</span></div>
             <a className="button button--coral" href={whatsappLink("Hello! I'd like to reserve a table at Savanna Kitchen.")} target="_blank" rel="noreferrer">Reserve a table <ArrowUpRight size={16} /></a>
           </div>
           <div className="dining-gallery reveal-up">
