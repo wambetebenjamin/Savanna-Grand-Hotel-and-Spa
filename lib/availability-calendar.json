@@ -1,0 +1,11 @@
+{
+  "description": "Availability exceptions for Savanna Grand. Add one entry per date and room type; dates use YYYY-MM-DD. Inventory is indicative until a live reservation system is connected.",
+  "blockedDates": [],
+  "inventory": {
+    "superior": 16,
+    "deluxe": 14,
+    "junior-suite": 8,
+    "executive-suite": 6,
+    "presidential-villa": 2
+  }
+}
