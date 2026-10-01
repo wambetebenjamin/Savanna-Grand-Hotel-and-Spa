@@ -1,6 +1,6 @@
 # Savanna Grand Hotel & Spa
 
-A responsive, Vercel-ready Next.js App Router site for Savanna Grand Hotel & Spa in Naivasha, Kenya. The page takes its layout cues from the uploaded VacayHome reference—utility bar, clean masthead, wide photographic hero, service ribbon, room gallery, resort feature blocks, quote slider and deep footer—while using new Savanna Grand copy and bespoke generated imagery. It uses patched Next.js 15.5.27 rather than the requested Next.js 14 line, whose latest release still has critical security advisories; the App Router and TypeScript setup remain the same.
+A responsive, Vercel-ready Next.js App Router site for Savanna Grand Hotel & Spa in Naivasha, Kenya. The page takes its layout cues from the uploaded VacayHome reference, including a utility bar, clean masthead, wide photographic hero, service ribbon, room gallery, resort feature blocks, quote slider and deep footer, while using new Savanna Grand copy and bespoke generated imagery. It uses patched Next.js 15.5.27 rather than the requested Next.js 14 line, whose latest release still has critical security advisories; the App Router and TypeScript setup remain the same.
 
 ## Local development
 
@@ -23,9 +23,9 @@ Without the optional Redis/email/WhatsApp credentials, local form submissions st
 
 ## API routes
 
-- `POST /api/availability` — validates dates, guest/room counts, then checks the JSON date exception list.
-- `GET /api/rooms` — returns the room catalogue.
-- `POST /api/booking` — validates and stores an enquiry, then attempts configured email and WhatsApp notifications.
-- `POST /api/contact` — validates a contact/newsletter enquiry, stores it and attempts configured email notification.
+- `POST /api/availability`: validates dates, guest and room counts, then checks the JSON date exception list.
+- `GET /api/rooms`: returns the room catalogue.
+- `POST /api/booking`: validates and stores an enquiry, then attempts configured email and WhatsApp notifications.
+- `POST /api/contact`: validates a contact and newsletter enquiry, stores it and attempts configured email notification.
 
 All API endpoints have rate limiting. Shared, distributed limits are applied in `middleware.ts` when Upstash is configured; route-level in-memory limiting is the local fallback.
